@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>drum kick</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="drumkit">
+
+  <ul class="keys">
+    <li data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">clap</span>
+    </li>
+    <li data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">hihat</span>
+    </li>
+    <li data-key="73" class="key">
+      <kbd>I</kbd>
+      <span class="sound">kick</span>
+    </li>
+    <li data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">openhat</span>
+    </li>
+    <li data-key="79" class="key">
+      <kbd>O</kbd>
+      <span class="sound">snare</span>
+    </li>
+    <li data-key="82" class="key">
+      <kbd>R</kbd>
+      <span class="sound">meow</span>
+    </li>
+  </ul>
+
+  <audio data-key="83" src="assets/sounds/clap.wav"></audio>
+  <audio data-key="65" src="assets/sounds/hihat.wav"></audio>
+  <audio data-key="73" src="assets/sounds/kick.wav"></audio>
+  <audio data-key="76" src="assets/sounds/openhat.wav"></audio>
+  <audio data-key="79" src="assets/sounds/snare.wav"></audio>
+  <audio data-key="82" src="assets/sounds/meow.wav"></audio>
+  
+  </div>
+
+  <script src="js/drum_kit.js"></script>
+  
+</body>
+</html>
