@@ -93,3 +93,37 @@ kbd {
   box-shadow: 0 0 1rem #EEEFC4;
   transform: scale(1.1);
 }
+
+/* CLOCK */
+
+#clock {
+  background: #242423; }
+  .clock-container {
+    border: 20px solid #F5CB5C;
+    border-radius: 50%;
+    height: 30rem;
+    width: 30rem;
+    position: relative;
+    padding: 2rem;
+    margin: 50px auto; 
+    box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2); }
+  .clock-face {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: translateY(-3px); }
+  .hand {
+    background: #F5CB5C;
+    height: 6px;
+    width: 50%;
+    position: absolute;
+    top: 50%; 
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.35, 1.74, 0.52, 0.99); }
+
