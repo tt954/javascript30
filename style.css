@@ -47,52 +47,58 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.bd {
+  background: #454777;
+  color: #FAF4F4;
+  text-align: center; 
+  margin-top: 50px; }
+  #main {
+  display: flex;
+  flex-direction: column; }
+  #main a {
+    cursor: pointer; }
+  #main a:hover,
+  .home-link:hover {
+    transform: scale(1.2); }
+  .home-link {
+    cursor: pointer;
+    font-size: 1.2rem; 
+    text-decoration: underline; }
+
 /* DRUM KICK */
 
 #drumkit {
-  background: url('assets/images/hero_01.jpg') bottom center;
-  background-size: cover;
-}
-
-.keys {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  min-height: 100vh;
-}
-
-.key {
-  background: rgba(0, 0, 0, 0.4);
-  border: .1rem solid black;
-  border-radius: .5rem;
-  color: #E8E0F7;
-  font-size: 1.5rem;
-  margin: 1rem;
-  padding: 1rem .5rem;
-  text-align: center;
-  text-shadow: 0 0 .5rem #333;
-  transition: all 0.7s ease;
-  width: 10rem;
-}
-
-.sound {
-  color: #c7b9e2;
-  font-size: 1.2rem;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-}
-
-kbd {
-  display: block;
-  font-size: 4rem;
-}
-
-.playing {
-  border-color: #EEEFC4;
-  box-shadow: 0 0 1rem #EEEFC4;
-  transform: scale(1.1);
-}
+  background: #409784; }
+  .keys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-height: 100vh; }
+    .key {
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: .5rem;
+      color: #E8E0F7;
+      cursor: pointer;
+      font-size: 1.5rem;
+      margin: 1rem;
+      padding: 1rem .5rem;
+      text-align: center;
+      text-shadow: 0 0 .5rem #333;
+      transition: all 0.7s ease;
+      width: 7rem; }
+  .sound {
+    color: #c7b9e2;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase; }
+  kbd {
+    display: block;
+    font-size: 4rem; }
+  .playing {
+    border-color: #EEEFC4;
+    box-shadow: 0 0 1rem #EEEFC4;
+    transform: scale(1.1); }
 
 /* CLOCK */
 
@@ -127,3 +133,30 @@ kbd {
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.35, 1.74, 0.52, 0.99); }
 
+/* CSS VARIABLES */
+
+:root {
+  --base: #F5CB5C;
+  --blur: 10px;
+  --spacing: 10px;
+}
+
+#css-variables {
+  background: #242423;
+  color: #FAF4F4;
+  font-size: 3rem; 
+  margin: 4rem;
+  text-align: center;}
+  .controls {
+    font-size: 2rem; }
+    .controls input {
+      width: 6rem; }
+  .day3-img {
+    margin: 4rem; }
+    .day3-img img {
+      background: var(--base);
+      filter: blur(var(--blur));
+      padding: var(--spacing); }
+  .hl {
+    color: var(--base); 
+    font-weight: 400; }
