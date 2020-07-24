@@ -160,3 +160,57 @@ input[type="submit"] {
   .hl {
     color: var(--base); 
     font-weight: 400; }
+
+/* GALLERY */
+
+.panel1 { background-image: url(https://vignette.wikia.nocookie.net/sailormoon/images/9/9c/Ami_Mizuno_Sailor_Mercury_Sailor_Form_-_Anime.png/revision/latest/scale-to-width-down/340?cb=20190904084817); }
+.panel2 { background-image: url(https://vignette.wikia.nocookie.net/sailormoon/images/4/41/Minako_Aino_Sailor_Form_-_Anime.png/revision/latest/scale-to-width-down/340?cb=20190906073411); }
+.panel3 { background-image: url(https://vignette.wikia.nocookie.net/sailormoon/images/1/1c/Usagi_Sailor_Moon_Cosmic_Form_-_Anime.png/revision/latest/scale-to-width-down/340?cb=20190909081231); }
+.panel4 { background-image: url(https://vignette.wikia.nocookie.net/sailormoon/images/5/57/Rei_Hino_Sailor_Mars_Super_Sailor_Form_-_Anime.png/revision/latest/scale-to-width-down/340?cb=20190904235114); }
+.panel5 { background-image: url(https://vignette.wikia.nocookie.net/sailormoon/images/2/2f/Makoto_Kino_Sailor_Jupiter_Sailor_Form_-_Anime.png/revision/latest/scale-to-width-down/340?cb=20190906020233); }
+.panel6 { background-image: url(https://vignette.wikia.nocookie.net/sailormoon/images/f/fc/Hotaru_Tomoe_Sailor_Saturn_Super_Sailor_Form_-_Anime.png/revision/latest/scale-to-width-down/340?cb=20190910050006); }
+.panel7 { background-image: url(https://vignette.wikia.nocookie.net/sailormoon/images/8/8f/Haruka_Tenou_Sailor_Uranus_Sailor_From_-_Anime.png/revision/latest/scale-to-width-down/340?cb=20190909055044); }
+.panel8 { background-image: url(https://vignette.wikia.nocookie.net/p__/images/5/5a/Sailor_Neptune_Season_III.png/revision/latest?cb=20170607032544&path-prefix=protagonist); }
+.panel9 { background-image: url(https://vignette.wikia.nocookie.net/p__/images/c/c6/Sailor_Pluto_Season_III.png/revision/latest?cb=20170607024056&path-prefix=protagonist); }
+
+#gallery {
+  background: #242423; }
+  .panels {
+    display: flex;
+    margin: 2rem 7rem;
+    min-height: 80vh;
+    overflow: hidden; }
+    .panel {
+      background-position: center;
+      background-size: cover;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15rem 0;
+      text-align: center;
+      transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        background 0.2s; }
+      .panel p {
+        font-size: 1.5rem;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45); }
+      .panel p:nth-child(2) { font-size: 2rem; }
+      .panel > * {
+        display: flex;
+        flex: 1 0 auto;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.5s;
+        margin: 0;
+        width: 100%; }
+      .panel > *:first-child { transform: translateY(-1000%); }
+      .panel.open-active > *:first-child { transform: translateY(0); }
+      .panel > *:last-child { transform: translateY(1000%); }
+      .panel.open-active > *:last-child { transform: translateY(0); }
+    .panel.open {
+      flex: 3;
+      font-size: 5rem;
+    }
