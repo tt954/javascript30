@@ -262,14 +262,18 @@ input[type="submit"] {
 
 #canvas {
   background: #F5CB5C; 
-  font-size: 18px !important;
-  margin: 0; }
+  font-size: 18px !important; 
+  margin: 2rem; }
+  #draw {
+    border: 4px solid #FCD4A0; 
+    height: 100%;
+    width: 100%; }
   .canvas-options {
     display: flex;
     align-items: center;
     justify-content: center; }
   .canvas-options > * {
-    margin: 2rem; }
+    margin: 0rem 2rem 1rem; }
   button.clear, a.canvas {
     background: #F3789A;
     border-radius: 4px;

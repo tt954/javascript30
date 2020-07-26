@@ -10,7 +10,6 @@ ctx.strokeStyle = '#F3789A';
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 20;
-ctx.global
 
 let isDrawing = false; 
 let lastX = 0, lastY = 0;
