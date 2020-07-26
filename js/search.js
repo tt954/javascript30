@@ -4,6 +4,7 @@ const cities = [];
 fetch(endpoint)
   .then(blob => blob.json())
   .then(data => cities.push(...data));
+cities.push({ city: "Sailor Moon", state: "Planet Earth", population: "7,794,798,739"})
 
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -20,8 +21,8 @@ function displayMatches() {
   const matchArr = findMatches(this.value, cities);
   const htmlText = matchArr.map(location => {
     const regex = new RegExp(this.value, 'gi');
-    const cityName = location.city.replace(regex, `<span class="hl">${this.value}</span>`);
-    const stateName = location.state.replace(regex, `<span class="hl">${this.value}</span>`);
+    const cityName = location.city.replace(regex, `<span class="hl-search">${this.value}</span>`);
+    const stateName = location.state.replace(regex, `<span class="hl-search">${this.value}</span>`);
 
     return `
       <li>

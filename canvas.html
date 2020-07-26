@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvas 🎨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="canvas" id="bd">
+
+  <div class="canvas-options">
+    <a class="home-link canvas" href="index.html">home</a>
+  
+    <div class="fx-container">
+      <label for="effects">choose an effect</label>
+      <select id="effects" class="effects">
+        <option value="source-over">none</option>
+        <option value="color-dodge">color dodge</option>
+        <option value="difference">difference</option>
+        <option value="hue">hue</option>
+        <option value="lighten">lighten</option>
+        <option value="luminosity">luminosity</option>
+        <option value="multiply">multiply</option>
+        <option value="overlay">overlay</option>
+        <option value="xor">xor</option>
+      </select>
+    </div>
+  
+    <button class="clear">clear canvas</button>
+  </div>
+
+  <canvas id="draw" width="800" height="800"></canvas>
+
+  <script src="js/canvas.js"></script>
+
+</body>
+</html>
