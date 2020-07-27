@@ -272,8 +272,8 @@ input[type="submit"] {
     display: flex;
     align-items: center;
     justify-content: center; }
-  .canvas-options > * {
-    margin: 0rem 2rem 1rem; }
+    .canvas-options > * {
+      margin: 0rem 2rem 1rem; }
   button.clear, a.canvas {
     background: #F3789A;
     border-radius: 4px;
@@ -283,3 +283,5 @@ input[type="submit"] {
   select.effects {
     border-radius: 4px;
     color: #fff; }
+
+
