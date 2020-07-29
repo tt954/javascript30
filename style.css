@@ -66,6 +66,7 @@ input[type="submit"] {
     font-size: 1.2rem; 
     text-decoration: underline; }
 
+
 /* DRUM KICK */
 
 #drumkit {
@@ -100,6 +101,7 @@ input[type="submit"] {
     border-color: #EEEFC4;
     box-shadow: 0 0 1rem #EEEFC4;
     transform: scale(1.1); }
+
 
 /* CLOCK */
 
@@ -162,6 +164,7 @@ input[type="submit"] {
     color: var(--base); 
     font-weight: 400; }
 
+
 /* GALLERY */
 
 .panel1 { background-image: url(https://vignette.wikia.nocookie.net/sailormoon/images/9/9c/Ami_Mizuno_Sailor_Mercury_Sailor_Form_-_Anime.png/revision/latest/scale-to-width-down/340?cb=20190904084817); }
@@ -216,6 +219,7 @@ input[type="submit"] {
       font-size: 5rem;
     }
 
+
 /* SEARCH */
 
 #search {
@@ -258,6 +262,7 @@ input[type="submit"] {
       background: #454777;
       color: #FCD4A0; }
 
+
 /* CANVAS */
 
 #canvas {
@@ -284,4 +289,38 @@ input[type="submit"] {
     border-radius: 4px;
     color: #fff; }
 
+
+/* CHECKLIST */
+
+#checklist {
+  color: #242423; 
+  font-size: 1.3rem; }
+  .checklist-homeIcon {
+    fill: #FAF4F4;
+    font-size: 1.3rem;
+    font-weight: 400; 
+    text-decoration: none; 
+    transition: all 0.2s;}
+  .checklist-homeIcon:hover {
+    transform: scale(1.2); }
+  .list {
+    background: #FAF4F4;
+    border-radius: 0.3rem;
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.25);
+    max-width: 35rem;
+    margin: 2rem auto; }
+    .item {
+      border-bottom: 1px solid #E8EDF1;
+      display: flex;
+      align-items: center; }
+    .item:last-child {
+      border-bottom: 0; }
+    .cb-input {
+      margin: 1.5rem 1.5rem; }
+    .cb-input:checked + p {
+      text-decoration: line-through; }
+      .cb-input + p {
+        border-left: 1px solid #D1E2FF;
+        padding: 1.2rem;
+      }
 
