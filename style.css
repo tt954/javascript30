@@ -108,7 +108,9 @@ input[type="submit"] {
 #clock {
   background: #242423; }
   .clock-container {
-    border: 20px solid #F5CB5C;
+    background-image: url(https://media1.tenor.com/images/1509ca7498ac6a6003796b77eb80bb1f/tenor.gif?itemid=17367600);
+    background-size: cover;
+    border: .8rem solid #FCD4A0;
     border-radius: 50%;
     height: 30rem;
     width: 30rem;
@@ -117,7 +119,7 @@ input[type="submit"] {
     margin: 50px auto; 
     box-shadow:
         0 0 0 4px rgba(0,0,0,0.1),
-        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 0 3px #F3CBCF,
         inset 0 0 10px black,
         0 0 10px rgba(0,0,0,0.2); }
   .clock-face {
@@ -125,8 +127,12 @@ input[type="submit"] {
     width: 100%;
     position: relative;
     transform: translateY(-3px); }
+  .clock-glitter {
+    height: 100%;
+    position: absolute; 
+    padding: 2rem; }
   .hand {
-    background: #F5CB5C;
+    background: #454777;
     height: 6px;
     width: 50%;
     position: absolute;
