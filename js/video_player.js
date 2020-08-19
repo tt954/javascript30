@@ -1,5 +1,6 @@
 const video = document.querySelector('.player__video');
 const playBtn = document.querySelector('.player__button.toggle');
+const skipBtns = document.querySelectorAll('[data-skip]');
 
 let isPlaying = false;
 
@@ -21,5 +22,12 @@ function togglePlay() {
   }
 }
 
+function skip() {
+  
+  console.log(parseInt(this.dataset.skip));
+  video.currentTime += parseInt(this.dataset.skip);
+}
 
+video.addEventListener('click', togglePlay);
 playBtn.addEventListener('click', togglePlay);
+skipBtns.forEach(btn => btn.addEventListener('click', skip));
