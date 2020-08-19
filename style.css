@@ -357,26 +357,33 @@ input[type="submit"] {
       cursor: pointer;
       line-height: 1;
       outline: 0;
-      padding: 0; }
+      padding: 0.5rem; }
     .player__controls {
-      background: rgba(0,0,0,0.1);
+      background: rgba(0,0,0,0.5);
       display: flex;
+      flex-wrap: wrap;
       position: absolute;
       bottom: 0;
       width: 100%;
       transition: all 0.3s;
       transform: translateY(100%) translateY(-5px); }
+      .player__controls > * {
+        flex: 1 }
       .player:hover .player__controls {
         transform: translateY(0px); }
+      .player:hover .progress {
+        height: 1rem; }
     .progress {
       background: rgba(0,0,0,0.5);
       position: relative;
       display: flex;
+      flex: 10;
       flex-basis: 100%;
       height: 5px;
       transition: height 0.3s; }
       .progress__filled {
         background: #ACCC29;
+        flex: 0;
         flex-basis: 50%; 
         width: 50%; }
 
