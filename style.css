@@ -338,11 +338,14 @@ input[type="submit"] {
   background: rgb(245,203,92);
   background: linear-gradient(48deg, rgba(245,203,92,1) 0%, rgba(252,212,160,1) 22%, rgba(250,171,193,1) 62%, rgba(243,120,154,1) 100%);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   margin: 0;
   padding: 0; }
+  .home-link.vp {
+    margin-bottom: 2em; }
   .player {
     border: 5px solid rgba(0,0,0,0.2);
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
