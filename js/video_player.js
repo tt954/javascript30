@@ -1,6 +1,7 @@
 const video = document.querySelector('.player__video');
 const playBtn = document.querySelector('.player__button.toggle');
 const skipBtns = document.querySelectorAll('[data-skip]');
+const volumeBtn = document.querySelector('.volumeBtn');
 const ranges = document.querySelectorAll('.player__slider');
 const progress = document.querySelector('.progress');
 const progressBar = document.querySelector('.progress__filled');
@@ -49,5 +50,10 @@ video.addEventListener('timeupdate', updateProgress);
 playBtn.addEventListener('click', togglePlay);
 skipBtns.forEach(btn => btn.addEventListener('click', skip));
 ranges.forEach(range => range.addEventListener('change', updateRange));
-progress.addEventListener('click', scrub)
+
+let mousedown = false;
+progress.addEventListener('click', scrub);
+progress.addEventListener('mousemove', e => mousedown && scrub(e));
+progress.addEventListener('mousedown', () => mousedown = true);
+progress.addEventListener('mouseup', () => mousedown = false);
 // ranges.forEach(range => range.addEventListener('mouseover', updateRange));
