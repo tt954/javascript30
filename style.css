@@ -47,6 +47,8 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.in-progress { cursor: progress !important; }
+
 .bd {
   background: #454777;
   color: #FAF4F4;
