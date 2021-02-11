@@ -52,14 +52,15 @@ input[type="submit"] {
 .bd {
   background: #454777;
   color: #FAF4F4;
-  text-align: center; 
-  margin-top: 50px; }
-  #main {
+  /* text-align: center;  */
+  margin: 5rem 10rem; }
+  .menu {
   display: flex;
   flex-direction: column; }
   #main a {
-    cursor: pointer; }
-  #main a:hover,
+    cursor: pointer; 
+    font-size: 2.5rem; }
+  #main a:hover { transform: translate(20px) }
   .home-link:hover,
   button.clear:hover {
     transform: scale(1.2); }
@@ -366,7 +367,7 @@ input[type="submit"] {
     .player__controls {
       background: rgba(0,0,0,0.5);
       display: flex;
-      /* flex-wrap: wrap; */
+      align-items: center;
       position: absolute;
       bottom: 0;
       width: 100%;
