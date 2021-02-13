@@ -67,7 +67,8 @@ input[type="submit"] {
   .home-link {
     cursor: pointer;
     font-size: 1.2rem; 
-    text-decoration: underline; }
+    text-decoration: underline;
+    text-align: center }
 
 
 /* DRUM KICK */
@@ -450,3 +451,4 @@ input[type=range].player__slider::-moz-range-thumb {
   cursor: pointer;
 }
 
+/* KEY DETECTION */
