@@ -13,16 +13,17 @@
     </svg>
   </a>
 
-  <p>type in sailor moon's nickname</p>
+  <p id="bunny-message">who is sailor moon</p>
   <div id="bunny"></div>
   
 </body>
   <script>
     const pressed = [];
-    const secretCode = "bunny";
+    const secretCode = "usagi";
     const imgBunny = document.createElement("img");
-    imgBunny.src = "assets/images/bunny.png";
+    imgBunny.src = "assets/images/magic.gif";
     bunnyDiv = document.getElementById("bunny");
+    bunnyMessage = document.getElementById("bunny-message");
 
     window.addEventListener("keyup", (e) => {
       pressed.push(e.key);
@@ -31,6 +32,7 @@
 
       if (pressed.join('').includes(secretCode)) {
         bunnyDiv.append(imgBunny);
+        bunnyMessage.innerHTML = "YASSS"
       }
 
     })
